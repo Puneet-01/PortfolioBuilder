@@ -23,7 +23,8 @@
   background-color: #1f1f14;
   border-radius: 20px;
   margin-right: 400px;
-  
+  margin-left:300px;
+  justify-content: center;  
 }
 .Field{
   
