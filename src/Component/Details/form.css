@@ -1,0 +1,77 @@
+
+.Body{
+    
+    background-size:content;
+    
+   
+  }
+  .Resume{
+    
+    padding-top: 2em;
+    padding-bottom: 10em;
+    margin-left: 400px;
+    color: black;
+    font-family: cursive;
+    
+    
+  }
+  
+  .Forms{
+    margin-top: 5em;
+    margin-bottom: 10em;
+    opacity: 1;
+    font-family: cursive;
+    padding-top: 5em;
+    background-color: #1f1f14;
+    border-radius: 20px;
+    margin-right: 400px;
+    margin-left:300px;
+    justify-content: center;  
+  }
+  .Field{
+    
+    padding: 1.5em;
+    text-align:left;
+    margin-left:25%;
+  }
+  .label{
+    font-size:25px;
+    color:beige;
+  }
+  .input{
+    font-family: cursive;
+    align-content: left;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-left: 4px;
+  }
+  
+  button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    align-items: center;
+    align-self: center;
+    margin-left: 35%;
+    margin-bottom:5% ;
+    margin-top: 5%;
+    font-size: 20px;
+    color: #800040;
+    
+  }
+  .Area{
+    border-radius: 10px;
+    font-size: 20px;
+    height:100px;
+    width: 350px;
+  }
+  .Entry{
+    padding-top: 2.5%;
+  }
+  .Heading{
+    color:beige;
+    margin-top: 0%;
+    padding-left: .5em;
+  }
