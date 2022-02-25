@@ -1,20 +1,21 @@
 import React, {useState} from 'react';
 import {Container,Row} from 'reactstrap';
-import form from './form.css';
+import form from './Form.css';
 import { Helmet } from 'react-helmet';
  const Main = (props) => {
 
 const [values,setValues]=useState({ 
     name:"",
     email: "",
+    address:"",
     linkedIn:"",
     github:"",
     skills:"",
     about:"",
-    interest:"",
+    
     training:"",
     education:"",
-    nonTech:"",
+    honours:"",
     projects:""
 })
 
@@ -41,7 +42,7 @@ const [values,setValues]=useState({
         
     }
     return(
-        <div classname="Body">
+        <div >
         <Helmet>
             <link rel="stylesheet" href='form.css'/>
         </Helmet>
@@ -54,7 +55,12 @@ const [values,setValues]=useState({
                     </Row>
                 </Row>
 
-
+                <Row className="Field">
+                   <label  className="label">Address : </label>
+                   <Row className="Entry">
+                   <input className="input"  name="address" placeholder="Address" value = {values.address} type="text"  onChange={handleChange}  />
+                   </Row>
+                </Row>
 
                 <Row className="Field">
                    <label  className="label">Email : </label>
@@ -63,10 +69,12 @@ const [values,setValues]=useState({
                    </Row>
                 </Row>
 
+                
+
                 <Row className="Field">
                    <label className="label">Linkedin : </label>
                    <Row className="Entry">
-                   <input className="input" name="linkedin" placeholder="Linkedin" value = {values.linkedIn} type="text"  onChange={handleChange}  />
+                   <input className="input" name="linkedIn" placeholder="LinkedIn" value = {values.linkedIn} type="text"  onChange={handleChange}  />
                      </Row>
                 </Row>
 
@@ -77,25 +85,22 @@ const [values,setValues]=useState({
                    </Row>
                    </Row>
                    <Row className="Field">
-                   <label className="label">Technical Skills : </label>
-                   <Row className="Entry">
-                   <textarea className="Area" name="technical" placeholder="Technical" value = {values.technical}   onChange={handleChange}  />
-                   </Row>
-                   </Row>
-                   <Row className="Field">
                    <label className="label">About yourself : </label>
                    <Row className="Entry">
                    <textarea className="Area" name="about" placeholder="About" value = {values.about}   onChange={handleChange}  />
                    </Row>
                    </Row>
+
                    <Row className="Field">
-                   <label className="label">Your Interest : </label>
+                   <label className="label">Technical Skills : </label>
                    <Row className="Entry">
-                   <textarea className="Area" name="interest" placeholder="Interest" value = {values.interest}   onChange={handleChange}  />
+                   <textarea className="Area" name="technical" placeholder="Technical" value = {values.technical}   onChange={handleChange}  />
                    </Row>
                    </Row>
+                   
+                   
                    <Row className="Field">
-                   <label className="label">Training : </label>
+                   <label className="label">Certificate and Licenses : </label>
                    <Row className="Entry">
                    <textarea className="Area" name="training" placeholder="Training" value = {values.training}   onChange={handleChange}  />
                    </Row>
@@ -110,9 +115,9 @@ const [values,setValues]=useState({
 
                    <Row className="Field">
                        
-                   <label className="label">Non Technical Skils : </label>
+                   <label className="label">Honours </label>
                    <Row className="Entry">
-                   <textarea className="Area" name="nonTech" placeholder="Skills" value = {values.nonTech}   onChange={handleChange}  />
+                   <textarea className="Area" name="honours" placeholder="Honours" value = {values.honours}   onChange={handleChange}  />
                    </Row>
                    </Row>
 
@@ -129,7 +134,7 @@ const [values,setValues]=useState({
 
                 <button type="submit">
 
-         Submit
+         Create Resume
          </button>
             </Container>
             

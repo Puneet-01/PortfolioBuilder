@@ -1,13 +1,13 @@
 
 .Body{
-    
-    background-size:content;
+    background-image:url("../Theme.jpg");
+    background-size:cover;
     
    
   }
   .Resume{
     
-    padding-top: 2em;
+    
     padding-bottom: 10em;
     margin-left: 400px;
     color: black;
@@ -17,8 +17,7 @@
   }
   
   .Forms{
-    margin-top: 5em;
-    margin-bottom: 10em;
+    
     opacity: 1;
     font-family: cursive;
     padding-top: 5em;

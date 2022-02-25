@@ -1,0 +1,18 @@
+.page{
+    margin-left: 20%;
+    
+    margin-right:20%;
+    margin-top: 5%;
+    
+}
+.fields{
+   background-color: rgb(95, 94, 94); 
+   padding-top: 2em;
+   padding-bottom: 2em;
+   padding-left: 1em;
+   border-radius: 1cm;
+}
+
+.links{
+    font-size: 12px;
+}
