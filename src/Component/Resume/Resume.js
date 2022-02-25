@@ -76,11 +76,10 @@ function Home(props)
     
 
     return(
-        <div className='page'>
-            <Helmet>
-                <link rel="stylesheet" href='style.css'/>
-            </Helmet>
-            <div className='fields'>
+        <div className='Container'>
+
+        
+        <div className='paper'>
 
             <h2>{name}</h2>
             <div className='links'>
@@ -89,19 +88,21 @@ function Home(props)
             <p >{linkedIn}</p>
             <p >{github}</p> 
             </div>
-            <h4>{about}</h4>
-            <hr />
+            <p>{projects}</p>
+            <p>{about }</p>
+            <hr id="divide"/>
             <h4>Education</h4>
             <p>{education}</p>
             <Skills />
             <Honours />
             <Certificate />
             <Projects />
-            </div>
-
-            
             
         </div>
+        </div>
+            
+            
+        
     )
 }
 
